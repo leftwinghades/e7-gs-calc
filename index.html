@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>E7 GS Calc</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>Epic Seven Gear Score Calculator</h1>
+    </div>
+
+    <div id="substats">
+
+        <form id="userGear">
+            <h4>Substat | Value | Relevance</h4>
+
+            <select id="substat1">
+                <option></option>
+                <option value="1">Attack%</option>
+                <option value="1">Defense%</option>
+                <option value="1">Health%</option>
+                <option value="1">Effect Resistance</option>
+                <option value="1">Effectiveness</option>
+                <option value="(8.0/4.0)">Speed</option>
+                <option value="(8.0/7.0)">Crit Damage</option>
+                <option value="(8.0/5.0)">Crit Rate</option>
+                <option value="(3.46/39.0)">Attack</option>
+                <option value="(4.99/31.0)">Defense</option>
+                <option value="(3.09/174.0)">Health</option>
+            </select>
+            <input type="text" id="substat1Value" required>
+            <input type="checkbox" id="relevantSubstat1" checked>
+            <br>
+
+            <select id="substat2">
+                <option></option>
+                <option value="1">Attack%</option>
+                <option value="1">Defense%</option>
+                <option value="1">Health%</option>
+                <option value="1">Effect Resistance</option>
+                <option value="1">Effectiveness</option>
+                <option value="(8.0/4.0)">Speed</option>
+                <option value="(8.0/7.0)">Crit Damage</option>
+                <option value="(8.0/5.0)">Crit Rate</option>
+                <option value="(3.46/39.0)">Attack</option>
+                <option value="(4.99/31.0)">Defense</option>
+                <option value="(3.09/174.0)">Health</option>
+            </select>
+            <input type="text" id="substat2Value" required>
+            <input type="checkbox" id="relevantSubstat2" checked>
+            <br>
+
+            <select id="substat3">
+                <option></option>
+                <option value="1">Attack%</option>
+                <option value="1">Defense%</option>
+                <option value="1">Health%</option>
+                <option value="1">Effect Resistance</option>
+                <option value="1">Effectiveness</option>
+                <option value="(8.0/4.0)">Speed</option>
+                <option value="(8.0/7.0)">Crit Damage</option>
+                <option value="(8.0/5.0)">Crit Rate</option>
+                <option value="(3.46/39.0)">Attack</option>
+                <option value="(4.99/31.0)">Defense</option>
+                <option value="(3.09/174.0)">Health</option>
+            </select>
+            <input type="text" id="substat3Value" required>
+            <input type="checkbox" id="relevantSubstat3" checked>
+            <br>
+
+            <select id="substat4">
+                <option></option>
+                <option value="1">Attack%</option>
+                <option value="1">Defense%</option>
+                <option value="1">Health%</option>
+                <option value="1">Effect Resistance</option>
+                <option value="1">Effectiveness</option>
+                <option value="(8.0/4.0)">Speed</option>
+                <option value="(8.0/7.0)">Crit Damage</option>
+                <option value="(8.0/5.0)">Crit Rate</option>
+                <option value="(3.46/39.0)">Attack</option>
+                <option value="(4.99/31.0)">Defense</option>
+                <option value="(3.09/174.0)">Health</option>
+            </select>
+            <input type="text" id="substat4Value" required>
+            <input type="checkbox" id="relevantSubstat4" checked>
+            <br>
+
+            <button type="button"onclick="getUserGear()">Calculate</button>
+            <input type="reset" value="Clear">
+        </form>
+
+    </div>
+
+    <div style="display: block;" id="results">
+        Gear Score is <span id="gearScore"></span>
+        <br>
+        Relevant Gear Score is <span id="relevantGearScore"></span>
+    </div>
+
+</body>
+
+</html>
